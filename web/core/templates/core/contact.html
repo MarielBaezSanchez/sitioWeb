@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block content %}
+
+<header class="bg-light">
+  <a href="#">
+    <img class="logo" src="img/isologo-code.png" alt="Logo">
+  </a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Monitor Cardiaco y de Oxigenación</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'index' %}">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section id="contact">
+  <div class="container">
+    <h2>Contacto</h2>
+    <h3>CodeCrafters</h3>
+
+    <p>Somos una empresa dedicada al desarrollo de software y soluciones tecnológicas innovadoras.</p>
+
+    <p>
+      <a href="https://www.facebook.com/CodeCrafters">Facebook  CodeCrafters</a> |
+      <a href="mailto:info@codecrafters.com">codecrafters@gmail.com</a> |
+      <a href="tel:+525512345678">+52 241 105 0825</a>
+    </p>
+
+    <img src="isologo-code.png" alt="Isologo CodeCrafters">
+    <img src="logotipo-code.png" alt="Logotipo CodeCrafters">
+    <img src="isotipo-code.png alt" alt="Isotipo CodeCrafters">
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Portada{% endblock %}
+
+{% block content %}
+
+<div class="masthead">
+  <h1>Monitor Cardiaco y de Oxigenación</h1>
+</div>
+
+<section id="about">
+  <div class="container">
+    <a href="{% url 'about' %}">Acerca de</a>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <a href="{% url 'contact' %}">Contacto</a>
+  </div>
+</section>
+
+{% endblock %}
